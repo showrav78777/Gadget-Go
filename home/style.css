@@ -1,0 +1,132 @@
+.sprite {
+  display: inline-block;
+    width: 85px;
+    height: 170px;
+    background-image: url('img/SPRITECSS.png');
+    background-repeat: no-repeat;
+    background-size: 500px auto;
+
+    /* Add this: */
+    transform-origin: top; /* Important */
+    transform: scaleY(0.9); /* 70% height */
+}
+
+/* Adjust background-position for each category */
+.sprite.pc {
+    background-position: -100 0;
+}
+
+.sprite.watches {
+    background-position: -100px 0;
+}
+
+.sprite.camera {
+    background-position: -190px 0;
+}
+
+.sprite.phones {
+    background-position: -290px 0;
+}
+
+.sprite.gadgets {
+    background-position: -385px 0;
+}
+
+/* Category List Styles */
+.category-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.category-list li {
+    list-style: none;
+    text-align: center;
+    display: inline-block;
+}
+
+.category-list a {
+    display: block;
+    text-decoration: none;
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+}
+
+/* .category-list img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+} */
+
+/* For desktop: */
+.col-1 { width: 8.33%; }
+.col-2 { width: 16.66%; }
+.col-3 { width: 25%; }
+.col-4 { width: 33.33%; }
+.col-5 { width: 41.66%; }
+.col-6 { width: 50%; }
+.col-7 { width: 58.33%; }
+.col-8 { width: 66.66%; }
+.col-9 { width: 75%; }
+.col-10 { width: 83.33%; }
+.col-11 { width: 91.66%; }
+.col-12 { width: 100%; }
+@media only screen and (max-width: 768px) {
+    .category-list {
+        flex-direction: column; /* Stack items vertically on small screens */
+    }
+}
+
+#banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.mySlides {display:none;}
+
+
+
+
+  /* Show slideshow only on screens wider than 650px (Laptop/Desktop) */
+  @media screen and (min-width: 651px) {
+    .slideshow-container {
+      display: block;
+    }
+    .responsive-img {
+      display: none;
+    }
+  }
+
+  /* Show only header pic on Tablet */
+  @media screen and (max-width: 650px) and (min-width: 466px) {
+    .slideshow-container {
+      display: none;
+    }
+    .responsive-img.tablet {
+      display: block;
+    }
+    .responsive-img.phone {
+      display: none;
+    }
+  }
+
+  /* Show only slide_1 on Phone */
+  @media screen and (max-width: 465px) {
+    .slideshow-container {
+      display: none;
+    }
+    .responsive-img.tablet {
+      display: none;
+    }
+    .responsive-img.phone {
+      display: block;
+    }
+  }

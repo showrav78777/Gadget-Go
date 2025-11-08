@@ -1,0 +1,155 @@
+
+/* Base footer container */
+.footer {
+  background-color: #1a1e23;
+  color: white;
+  padding: 40px 50px 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Row layout for footer sections */
+.footer .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+/* Footer headings */
+.footer h3, 
+.footer h4, 
+.footer h5 {
+  color: #ff7722;
+  margin-bottom: 20px;
+}
+
+/* Footer links */
+.footer a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: #ff7722;
+}
+
+/* Navigation lists in footer */
+.footer .nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer .nav-list li {
+  margin-bottom: 10px;
+}
+
+/* Pre tag formatting in footer */
+.footer .nav-list pre {
+  white-space: normal;
+  font-family: inherit;
+  margin: 0;
+}
+
+/* Button styling */
+.footer .btn {
+  padding: 8px 15px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.footer .btn-outline-primary {
+  border: 1px solid #ff7722;
+  color: #ff7722;
+  background: none;
+}
+
+.footer .btn-outline-primary:hover {
+  background-color: #ff7722;
+  color: white;
+}
+
+/* Newsletter section */
+.footer .aside {
+  text-align: left;
+}
+
+
+.footer input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: none;
+  margin-bottom: 15px;
+}
+
+/* Copyright section */
+.footer p {
+  margin: 0;
+  padding: 15px 0;
+  text-align: center;
+  border-top: 1px solid #333;
+}
+
+.footer img {
+  height: 30px;
+  vertical-align: middle;
+}
+
+/* Column styling */
+.footer .menu {
+  padding-right: 20px;
+}
+
+.footer .right {
+  padding-left: 20px;
+}
+
+/* ====== RESPONSIVE DESIGN ====== */
+@media only screen and (max-width: 768px) {
+  /* For mobile phones */
+  .footer {
+    padding: 30px 15px 10px;
+  }
+  
+  .footer .row > div {
+    width: 100%;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .footer .menu, 
+  .footer .right {
+    padding: 0;
+  }
+  
+  .footer .nav-list {
+    display: block;
+  }
+  
+  .footer .nav-list pre {
+    white-space: normal;
+    font-family: inherit;
+  }
+  
+  .footer .aside {
+    text-align: center;
+  }
+  
+  .footer input[type="text"] {
+    max-width: 300px;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  /* For tablets */
+  .footer {
+    padding: 30px 30px 15px;
+  }
+  
+  .footer .row > div {
+    padding: 0 10px;
+  }
+} 

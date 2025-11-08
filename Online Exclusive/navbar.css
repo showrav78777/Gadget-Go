@@ -1,0 +1,143 @@
+.navbar {
+    background-color: black;
+    /* Navbar background color */
+    height: 100px;
+    /* Set the desired height */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+
+.nav-link {
+    background-color: rgb(39, 36, 36);
+    color: white;
+    font-size: 12px;
+    padding: 15px;
+    height: 60px;
+    width: 159px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    box-sizing: border-box;
+
+}
+
+.cart-icon, .user-icon a {
+    position: relative;
+    left: -10px; /* Move icons slightly to the left */
+}
+
+
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    /* Show dropdown on hover */
+    position: absolute;
+    left: 0;
+    right: auto;
+
+}
+
+
+.nav-link:hover {
+    background-color: rgb(25, 23, 23);
+    /* Darker shade for hover */
+    color: white;
+}
+
+#logo img {
+    max-height: 60px;
+    /* Set the desired height for the logo */
+    width: fit-content;
+}
+
+/* Styles for the search bar */
+.search-input {
+    height: 30px;
+    /* Set the desired height for the search input */
+    width: 520px;
+    /* Set the desired width for the search input */
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: rgb(14, 13, 13);
+    min-width: 160px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 5px;
+}
+
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+
+
+
+.dropdown-item {
+    color: white;
+    /* Text color for dropdown items */
+    padding: 10px 20px;
+    /* Padding for dropdown items */
+    text-decoration: none;
+    /* Remove underline */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 10px;
+    font-weight: 500;
+}
+
+.dropdown-item:hover {
+    background-color: rgb(25, 23, 23);
+    /* Darker shade on hover */
+    color: white;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .navbar-nav {
+        flex-direction: column;
+        /* Stack items vertically on small screens */
+    }
+}
+
+/* Column width classes */
+.col-1 { width: 8.33%; }
+.col-2 { width: 16.66%; }
+.col-3 { width: 25%; }
+.col-4 { width: 33.33%; }
+.col-5 { width: 41.66%; }
+.col-6 { width: 50%; }
+.col-7 { width: 58.33%; }
+.col-8 { width: 66.66%; }
+.col-9 { width: 75%; }
+.col-10 { width: 83.33%; }
+.col-11 { width: 91.66%; }
+.col-12 { width: 100%; }
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+    .navbar-nav {
+        display: flex;
+        /* Use flexbox for nav items */
+        flex-wrap: wrap;
+        /* Allow items to wrap */
+    }
+}
+
+
+
+
